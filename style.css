@@ -8,15 +8,13 @@ body {
 .label {
   border: 1px solid black;
   margin: 20px auto;
-  min-width: 280px;
-  max-width: 400px;
-  width: 35%;
+  width: 280px;
   padding: 0 8px;
 }
 header h1 {
   text-align: center;
   margin: 0;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
 }
 header p {
   margin: 5px 0;
@@ -33,4 +31,14 @@ header p {
 }
 .right {
   float: right;
+}
+.medium {
+  height: 3px;
+  background-color: black;
+}
+.calories {
+  font-size: 2rem;
+}
+.calories-serving p {
+  margin: 5px 0;
 }
