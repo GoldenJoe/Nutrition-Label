@@ -1,5 +1,6 @@
 body {
-  font-size: 16px;
+  font-size: 15px;
+
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 * {
@@ -15,6 +16,7 @@ header h1 {
   text-align: center;
   margin: 0;
   letter-spacing: 2px;
+  font-size: 2rem;
 }
 header p {
   margin: 5px 0;
@@ -22,8 +24,13 @@ header p {
 .bold {
   font-weight: 900;
 }
+.big {
+  font-size: 16px;
+}
 .divider {
   border-bottom: 1px solid black;
+  margin: 0;
+  clear: right;
 }
 .large {
   height: 10px;
@@ -33,7 +40,7 @@ header p {
   float: right;
 }
 .medium {
-  height: 3px;
+  height: 5px;
   background-color: black;
 }
 .calories {
@@ -41,4 +48,19 @@ header p {
 }
 .calories-serving p {
   margin: 5px 0;
+}
+.daily-value p {
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+}
+.indent {
+  margin-left: 1em;
+}
+.double-indent {
+  margin-left: 2em;
+}
+.note {
+  font-size: 10px;
+  margin: 5px 0;
+  line-height: 1.5em;
 }
