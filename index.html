@@ -5,79 +5,342 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrition Label</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="nutrition.css" />
   </head>
   <body>
-    <div class="label">
-      <header>
-        <h1 class="bold">Nutrition Facts</h1>
-        <div class="divider"></div>
-        <p>12 servings per container</p>
-        <p class="bold big">
-          Serving size <span class="right">1/2 cup (100g)</span>
-        </p>
-      </header>
-      <div class="divider large"></div>
-      <div class="calories-serving">
-        <p class="bold big">Amount per serving</p>
-        <p class="bold calories">Calories <span class="right">380</span></p>
+		<details>
+			<summary>
+				<div class="collapsible-button">
+				<span class="bold">NUTRITION FACTS </span>
+				<span class="icon">▶️</span>
+				</div>
+			</summary>
+			<!-- Nutrition Label -->
+			<div class="nutritionlabel">
+      <!-- Header -->
+			<div class="nl_header">
+        <div class="nutrition-title">Nutrition Facts</div>
+				<p>Serving Size 12oz</p>
+        <!-- <hr class="sm">
+				<p>1 serving per container</p>
+				<p><span class="bold">Serving Size</span> 12oz</p> -->
+			</div>
+      <hr class="md">
+			<div class="calories-serving">
+        <p class="bold">Amount per serving</p>
+        <div class="dv-row noborder">
+          <span class="dv-l dv-tight bold calories">Calories</span>
+          <span class="dv-r bold calories">000</span>
+        </div>
       </div>
-      <div class="medium divider"></div>
+      <hr class="md">
+      <!-- Basic Nutritional Info -->
       <div class="daily-value">
-        <p class="bold right big">% Daily Value *</p>
-        <div class="divider"></div>
-        <p>
-          <span class="bold big">Total Fat</span> 10g
-          <span class="bold right big">10%</span>
-        </p>
-        <div class="divider"></div>
-        <p class="indent">
-          Saturated Fat 1g <span class="right bold big">5%</span>
-        </p>
-        <div class="divider"></div>
-        <p class="indent"><i>Trans</i> Fat 0g</p>
-        <div class="divider"></div>
-        <p>
-          <span class="bold big">Cholesterol</span> 0mg
-          <span class="right bold big">0%</span>
-        </p>
-        <div class="divider"></div>
-        <p>
-          <span class="bold big">Sodium</span> 180mg
-          <span class="right bold big">8%</span>
-        </p>
-        <div class="divider"></div>
-        <p>
-          <span class="bold big">Total Carbohydrate</span> 40g
-          <span class="right bold big">15%</span>
-        </p>
-        <div class="divider"></div>
-        <p class="indent">Dietary Fiber 5g</p>
-        <div class="divider"></div>
-        <p class="indent">Total Sugars 16g</p>
-        <div class="divider"></div>
-        <p class="double-indent">
-          Includes 12g Added Sugars <span class="bold right big">20%</span>
-        </p>
-        <div class="divider"></div>
-        <p><span class="bold big">Protein</span> 4g</p>
+        <p class="bold right">% Daily Value *</p>
+        <hr class="sm">
+				<div class="dv-row">
+          <span class="dv-l dv-tight bold">Total Fat</span>
+          <span class="dv-m">10g</span>
+          <span class="dv-r bold">10%</span>
+        </div>
+				<div class="dv-row">
+          <span class="dv-l dv-tight indent-x1">Saturated Fat</span>
+          <span class="dv-m">1g</span>
+          <span class="dv-r bold">5%</span>
+        </div>
+				<div class="dv-row">
+          <span class="dv-l dv-tight indent-x1"><i>Trans</i> Fat</span>
+          <span class="dv-m">0g</span>
+        </div>
+				<div class="dv-row">
+          <span class="dv-l dv-tight bold">Cholesterol</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r bold">0%</span>
+        </div>
+				<div class="dv-row">
+          <span class="dv-l dv-tight bold">Sodium</span>
+          <span class="dv-m">180mg</span>
+          <span class="dv-r bold">8%</span>
+        </div>
+				<div class="dv-row">
+          <span class="dv-l dv-tight bold">Total Carbohydrate</span>
+          <span class="dv-m">40g</span>
+          <span class="dv-r bold">15%</span>
+        </div>
+				<div class="dv-row">
+          <span class="dv-l dv-tight indent-x1">Dietary Fiber</span>
+          <span class="dv-m">5g</span>
+        </div>
+				<div class="dv-row">
+          <span class="dv-l dv-tight indent-x1">Total Sugars</span>
+          <span class="dv-m">16g</span>
+        </div><div class="dv-row">
+          <span class="dv-l dv-tight indent-x2">Includes 12g Added Sugars</span>
+          <span class="dv-r bold">20%</span>
+        </div>
+				<div class="dv-row noborder">
+          <span class="dv-l dv-tight bold">Protein</span>
+          <span class="dv-m">4g</span>
+        </div>
       </div>
-      <div class="divider large"></div>
+      <hr class="lg">
+      <!-- Vitamins -->
       <div class="daily-value">
-        <p>Vitamin D 3mcg <span class="right">10%</span></p>
-        <div class="divider"></div>
-        <p>Calcium 280mg <span class="right">30%</span></p>
-        <div class="divider"></div>
-        <p>Iron 6mg <span class="right">55%</span></p>
-        <div class="divider"></div>
-        <p>Potassium 235mg <span class="right">7%</span></p>
+        <p class="bold right">Vitamins</p><hr class="sm">
+        <div class="dv-row">
+          <span class="dv-l">Vitamin A</span>
+          <span class="dv-m">0mcg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin B1 (Thiamin)</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin B2 (Riboflavin)</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin B3 (Niacin)</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin B5</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin B6</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin B9</span>
+          <span class="dv-m">0mcg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin B12</span>
+          <span class="dv-m">0mcg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin C</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin D</span>
+          <span class="dv-m">0mcg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin E</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Vitamin K</span>
+          <span class="dv-m">0mcg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Choline</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
       </div>
-      <div class="medium"></div>
+      <!-- Minerals -->
+      <div class="daily-value">
+        <p class="bold right">Minerals</p>
+				<hr class="sm">
+        <div class="dv-row">
+          <span class="dv-l">Calcium</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Copper</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Iron</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Magnesium</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Manganese</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Selenium</span>
+          <span class="dv-m">0mcg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Zinc</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+      </div>
+      <!-- Fats -->
+      <div class="daily-value">
+        <p class="bold right">Fats</p>
+				<hr class="sm">
+        <div class="dv-row">
+          <span class="dv-l">Monounsaturated Fats</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Polyunsaturated Fats</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Omega 3</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Omega 6</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Omega 3:6 Ratio</span>
+          <span class="dv-m">0:0</span>
+          <span class="dv-r"></span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Omega 6:3 Ratio</span>
+          <span class="dv-m">0:0</span>
+          <span class="dv-r"></span>
+        </div>
+      </div>
+      <!-- Amino Acids -->
+      <div class="daily-value">
+        <p class="bold right">Amino Acids</p>
+				<hr class="sm">
+        <div class="dv-row">
+          <span class="dv-l">Betaine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Tryptophan</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Theronine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Isoleucine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Leucine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Lysine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Methionine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Cystine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Phenylalanine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Tyrosine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Valine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Arginine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Histidine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Alanine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Aspartic Acid</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Glutamic Acid</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Glycine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Proline</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Serine</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+        <div class="dv-row">
+          <span class="dv-l">Hydroxyproline</span>
+          <span class="dv-m">0mg</span>
+          <span class="dv-r">0%</span>
+        </div>
+      </div>
+      <!-- Notes -->
+      <hr class="md">
       <p class="note">
         * The % Daily Value (DV) tells you how much a nutrient in a serving of
         food contributes to a daily diet. 2,000 calories a day is used for
         general nutrition advice.
       </p>
-    </div>
+			</div>
+		</details>
   </body>
 </html>
