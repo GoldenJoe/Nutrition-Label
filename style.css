@@ -1,66 +1,146 @@
-body {
-  font-size: 15px;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-* {
+/* Container */
+.nutritionlabel {
+  font-size: 1em;
+  font-family: sans-serif;
   box-sizing: border-box;
-}
-.label {
+  
   border: 1px solid black;
   margin: 20px auto;
-  width: 280px;
+	min-width: 20em;
+	max-width: 30em;
   padding: 0 8px;
 }
-header h1 {
-  text-align: center;
-  margin: 0;
-  letter-spacing: 2px;
-  font-size: 2rem;
-}
-header p {
-  margin: 5px 0;
-}
+
+/* Weight */
 .bold {
   font-weight: 900;
+	font-size: 1em;
 }
-.big {
-  font-size: 16px;
-}
-.divider {
-  border-bottom: 1px solid black;
+
+/* Dividers */
+hr.sm {
   margin: 0;
-  clear: right;
+  border-bottom: 1px solid black;
 }
-.large {
-  height: 10px;
-  background-color: black;
+hr.md {
+  margin: 0;
+  border-bottom: 4px solid black;
 }
-.right {
-  float: right;
+hr.lg {
+  margin: 0;
+  border-bottom: 8px solid black;
 }
-.medium {
-  height: 5px;
-  background-color: black;
-}
-.calories {
-  font-size: 2rem;
-}
-.calories-serving p {
-  margin: 5px 0;
-}
-.daily-value p {
-  margin-top: 1.5px;
-  margin-bottom: 1.5px;
-}
-.indent {
+
+/* Positioning */
+.indent-x1 {
   margin-left: 1em;
 }
-.double-indent {
+.indent-x2 {
   margin-left: 2em;
+}
+.right {
+	text-align: right;
+}
+.left-amt {
+	margin-right: 100px;
+}
+.dv-row {
+	display: flex;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid black;
+	align-items:baseline; 
+}
+.dv-l {
+	min-width: 55%;
+}
+.dv-m {
+	flex-basis: 0;
+	flex-grow: 1;
+	margin: 0 0.3em;
+}
+.dv-r {
+	flex-basis: 0;
+	flex-grow: 1;
+	text-align: right;
+}
+.dv-tight {
+	min-width: unset;
+}
+.noborder {
+	border: unset;
+}
+.daily-value .dv-row:nth-of-type(odd) {
+	background-color: rgb(248, 248, 248);
+}
+
+/* Specific */
+.nl_header {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 0em;
+	font-size: 2.5em;
+}
+.nl_header p {
+	margin: 5px 0;
+	font-size: 0.4em;
+}
+.nutrition-title {
+	font-weight: 900;
+}
+.calories {
+  font-size: 1.5em;
+	margin-top: -0.2em;
+	margin-bottom: 0.0em;
+}
+.calories-serving p {
+  margin: 0px 0px;
+}
+.daily-value p {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 .note {
   font-size: 10px;
   margin: 5px 0;
   line-height: 1.5em;
 }
+
+/* Collapsible */
+.collapsible-button {
+	display: flex;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 6px; padding: 4px;
+}
+.collapsible-button > .bold {
+	padding-right: 0.3em;
+}
+details {
+  user-select: none;
+}
+details > summary span.icon {
+  transition: all 0.3s;
+}
+details[open] summary span.icon {
+  transform: rotate(90deg);
+	transform-origin: 50% 50%;
+}
+summary {
+  display: flex;
+	cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+/* Hide the arrow
+details > summary {
+  list-style: none;
+} */
+/* Alternate arrow characters 
+details summary {
+	list-style-type: '→ ';
+}
+details[open] summary {
+	list-style-type: '↴ ';
+} */
